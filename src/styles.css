@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-slide-next img{
+    transform: scale(1.4) !important; transition: all .3s;
+}
+.swiper-slide-next {
+    transform: scale(1.1) !important; transition: all .3s;
+}
+/* .swiper-slide-next img{ */
+    /* width: 1;
+} */
