@@ -49,13 +49,14 @@ let salom5 = document.querySelector('.salom5')
 imgmain5.addEventListener('click', function () {
     salom5.classList.toggle('hidden')
     imgmain5.classList.toggle('rotate-180')
+    text.classList.toggle('hidden')
    
 })
 let imgmain6 = document.querySelector('.main-img6')
 let salom6 = document.querySelector('.salom6')
 imgmain6.addEventListener('click', function () {
     salom6.classList.toggle('hidden')
-    imgmain6.classList.toggle('rotate-180')
+
    
 })
 let imgmain7 = document.querySelector('.main-img7')
@@ -74,7 +75,7 @@ imgmain8.addEventListener('click', function () {
 })
 let imgmain9 = document.querySelector('.main-img9')
 let salom9 = document.querySelector('.salom9')
-imgmain5.addEventListener('click', function () {
+imgmain9.addEventListener('click', function () {
     salom9.classList.toggle('hidden')
     imgmain9.classList.toggle('rotate-180')
    
