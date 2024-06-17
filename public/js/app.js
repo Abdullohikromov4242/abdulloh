@@ -1,13 +1,30 @@
 
-let imgmain = document.querySelector('.main-img')
-let salom = document.querySelector('.salom')
+let respomsive_menu = document.querySelector('#responsive')
+let hamburger = document.querySelector('#hamburger-menu')
+let close_btn = document.querySelector('#close_menu')
 
-
-imgmain.addEventListener('click', function () {
-    salom.classList.toggle('hidden')
-    imgmain.classList.toggle('rotate-180')
-   
+hamburger.addEventListener('click' , function () {
+    respomsive_menu.classList.add('left-0')
+    respomsive_menu.classList.remove('-left-full')
 })
+close_btn.addEventListener('click' , function () {
+    respomsive_menu.classList.add('-left-full')
+    respomsive_menu.classList.remove('left-0')
+    body.classList.remove('overflow-hidden')
+    
+})
+
+if(document.querySelector('.salom')){
+    
+    let imgmain = document.querySelector('.main-img')
+    let salom = document.querySelector('.salom')
+    
+    
+    imgmain.addEventListener('click', function () {
+        salom.classList.toggle('hidden')
+        imgmain.classList.toggle('rotate-180')
+    })
+}
 let imgmain1 = document.querySelector('.main-img1')
 let salom1 = document.querySelector('.salom1')
 
@@ -84,16 +101,18 @@ imgmain9.addEventListener('click', function () {
 
 
 
+let body = document.querySelector('body')
+hamburger.addEventListener('click' , function () {
+    body.classList.add('overflow-hidden')
+})
+let respomsive_menu1 = document.querySelector('#responsive')
+let hamburger1 = document.querySelector('#hamburger-menu')
+let close_btn1 = document.querySelector('#close_menu')
+let body1 = document.querySelector('body')
 
-
-
-
-
-
-
-
-
-
+hamburger1.addEventListener('click' , function () {
+    body1.classList.add('overflow-hidden')
+})
 
 
 var swiper = new Swiper(".mySwiper", {
