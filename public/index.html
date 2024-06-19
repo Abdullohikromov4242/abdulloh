@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="google-site-verification" content="VyYBrksrWL5n_Y8IdlMQXT1uy6nMYA6ABeD7Iiq51Kk" />
   <link rel="stylesheet" href="./dist/output.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -84,7 +85,7 @@
             <i class="fa-solid fa-x"></i>
           </button>
         </div>
-        <ul class="mb-2 text-center flex flex-col gap-[20px]">
+        <ul class="mb-2 text-center flex flex-col gap-[20px] relative z-40">
           <li class="transition-all hover:opacity-60 text-[white]"><a href="./index.html">Услуги</a></li>
           <li class="transition-all hover:opacity-60 text-[white]"><a href="./index2.html">О нас</a></li>
           <li class="transition-all hover:opacity-60 text-[white]"><a href="./index3.html">Блог</a></li>
@@ -920,9 +921,15 @@
   </script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 10,
+      slidesPerView: 1,
       loop: true,
+      breakpoints: {
+      
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }
 
     });
   </script>
