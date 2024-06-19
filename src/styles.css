@@ -12,3 +12,6 @@
 /* .swiper-slide-next img{ */
     /* width: 1;
 } */
+.main-img:hover{
+    color: white !important;
+}
